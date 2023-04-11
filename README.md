@@ -103,5 +103,5 @@ Custom Recipe
 ## Wireframes
 
 
-<img src="https://github.com/IntermediateAndroidSpring2023/RecipeApp/blob/main/RecipeWireFrameUpdated.jpg" width=600>
+<img src="https://github.com/AndroidSpring2023FinalProject/RecipeApp/blob/main/RecipeWireFrameUpdated.jpg" width=600>
 
