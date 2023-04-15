@@ -11,6 +11,7 @@
 
 
         <androidx.recyclerview.widget.RecyclerView
+            android:id = "@+id/rvFridgeIngredients"
             android:layout_width="0dp"
             android:layout_height="0dp"
             android:layout_margin="8dp"
@@ -30,7 +31,7 @@
             android:textSize="34sp"
             android:textStyle="bold"
             app:layout_constraintEnd_toStartOf="@+id/iBtnDeleteAll"
-            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/testButton"
             app:layout_constraintTop_toTopOf="parent" />
 
         <ImageButton
@@ -42,6 +43,15 @@
             app:layout_constraintBottom_toBottomOf="@+id/label"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="@+id/label" />
+
+        <Button
+            android:id="@+id/testButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:text="Test"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </FrameLayout>
