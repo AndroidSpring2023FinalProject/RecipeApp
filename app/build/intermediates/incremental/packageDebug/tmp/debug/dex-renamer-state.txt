@@ -1,0 +1,10 @@
+#Sat Apr 15 04:35:41 CDT 2023
+base.2=C\:\\Users\\monte\\OneDrive\\Documents\\UTSA_Spring2023\\CS3443_ApplicationsProgramming\\RecipeApp\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\12\\classes.dex
+path.2=12/classes.dex
+base.1=C\:\\Users\\monte\\OneDrive\\Documents\\UTSA_Spring2023\\CS3443_ApplicationsProgramming\\RecipeApp\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\0\\classes.dex
+path.1=0/classes.dex
+base.0=C\:\\Users\\monte\\OneDrive\\Documents\\UTSA_Spring2023\\CS3443_ApplicationsProgramming\\RecipeApp\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes.dex
+renamed.2=classes3.dex
+renamed.1=classes2.dex
+renamed.0=classes.dex
+path.0=classes.dex
