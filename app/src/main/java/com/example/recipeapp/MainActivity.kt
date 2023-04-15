@@ -16,7 +16,7 @@ class MainActivity : AppCompatActivity() {
 
         val btmNavView = findViewById<BottomNavigationView>(R.id.bottom_navigation)
 
-        btmNavView.setOnItemReselectedListener { item ->
+        btmNavView.setOnItemSelectedListener { item ->
             lateinit var fragment: Fragment
             when(item.itemId){
                 R.id.action_fridge -> fragment = fridgeFragment
