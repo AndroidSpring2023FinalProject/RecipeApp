@@ -5,18 +5,18 @@
         android:id="@+id/action_fridge"
         android:enabled="true"
         android:icon="@drawable/ic_fridge"
-        android:title="Fridge"
+        android:title="Log"
         app:showAsAction="ifRoom" />
     <item
         android:id="@+id/action_grocery_list"
         android:enabled="true"
         android:icon="@drawable/ic_grocery"
-        android:title="My List"
+        android:title="Stats"
         app:showAsAction="ifRoom" />
     <item
         android:id="@+id/action_recipes"
         android:enabled="true"
         android:icon="@drawable/ic_recipes"
-        android:title="Recipes"
+        android:title="Stats"
         app:showAsAction="ifRoom" />
 </menu>

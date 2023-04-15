@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.recipeapp-mergeDebugResources-45:/values-az/values-az.xml",
+            "outputFile": "com.example.recipeapp-mergeDebugResources-27:/values-az/values-az.xml",
             "map": [
                 {
                     "source": "C:\\Users\\monte\\.gradle\\caches\\transforms-3\\f3889f18d4f26e70cef4e17d11226053\\transformed\\core-1.9.0\\res\\values-az\\values-az.xml",

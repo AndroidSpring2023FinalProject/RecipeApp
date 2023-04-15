@@ -1,114 +1,98 @@
 [
     {
-        "merged": "C:\\Users\\monte\\.gradle\\daemon\\7.4\\com.example.recipeapp-merged_res-47:\\layout_fragment_fridge.xml.flat",
-        "source": "C:\\Users\\monte\\.gradle\\daemon\\7.4\\com.example.recipeapp-main-49:\\layout\\fragment_fridge.xml"
+        "merged": "com.example.recipeapp-merged_res-29:/drawable_ic_recipes.xml.flat",
+        "source": "com.example.recipeapp-main-31:/drawable/ic_recipes.xml"
     },
     {
-        "merged": "C:\\Users\\monte\\.gradle\\daemon\\7.4\\com.example.recipeapp-merged_res-47:\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
-        "source": "C:\\Users\\monte\\.gradle\\daemon\\7.4\\com.example.recipeapp-main-49:\\mipmap-anydpi-v26\\ic_launcher_round.xml"
+        "merged": "com.example.recipeapp-merged_res-29:/mipmap-mdpi_ic_launcher.webp.flat",
+        "source": "com.example.recipeapp-main-31:/mipmap-mdpi/ic_launcher.webp"
     },
     {
-        "merged": "C:\\Users\\monte\\.gradle\\daemon\\7.4\\com.example.recipeapp-merged_res-47:\\layout_fridge_item.xml.flat",
-        "source": "C:\\Users\\monte\\.gradle\\daemon\\7.4\\com.example.recipeapp-main-49:\\layout\\fridge_item.xml"
+        "merged": "com.example.recipeapp-merged_res-29:/drawable-anydpi-v24_ic_launcher_foreground.xml.flat",
+        "source": "com.example.recipeapp-pngs-24:/drawable-anydpi-v24/ic_launcher_foreground.xml"
     },
     {
-        "merged": "C:\\Users\\monte\\.gradle\\daemon\\7.4\\com.example.recipeapp-merged_res-47:\\mipmap-xhdpi_ic_launcher.webp.flat",
-        "source": "C:\\Users\\monte\\.gradle\\daemon\\7.4\\com.example.recipeapp-main-49:\\mipmap-xhdpi\\ic_launcher.webp"
+        "merged": "com.example.recipeapp-merged_res-29:/xml_backup_rules.xml.flat",
+        "source": "com.example.recipeapp-main-31:/xml/backup_rules.xml"
     },
     {
-        "merged": "C:\\Users\\monte\\.gradle\\daemon\\7.4\\com.example.recipeapp-merged_res-47:\\drawable_ic_recipes.xml.flat",
-        "source": "C:\\Users\\monte\\.gradle\\daemon\\7.4\\com.example.recipeapp-main-49:\\drawable\\ic_recipes.xml"
+        "merged": "com.example.recipeapp-merged_res-29:/mipmap-hdpi_ic_launcher.webp.flat",
+        "source": "com.example.recipeapp-main-31:/mipmap-hdpi/ic_launcher.webp"
     },
     {
-        "merged": "C:\\Users\\monte\\.gradle\\daemon\\7.4\\com.example.recipeapp-merged_res-47:\\drawable_ic_delete_all.xml.flat",
-        "source": "C:\\Users\\monte\\.gradle\\daemon\\7.4\\com.example.recipeapp-main-49:\\drawable\\ic_delete_all.xml"
+        "merged": "com.example.recipeapp-merged_res-29:/layout_fragment_recipes_list.xml.flat",
+        "source": "com.example.recipeapp-main-31:/layout/fragment_recipes_list.xml"
     },
     {
-        "merged": "C:\\Users\\monte\\.gradle\\daemon\\7.4\\com.example.recipeapp-merged_res-47:\\layout_fragment_grocery_list.xml.flat",
-        "source": "C:\\Users\\monte\\.gradle\\daemon\\7.4\\com.example.recipeapp-main-49:\\layout\\fragment_grocery_list.xml"
+        "merged": "com.example.recipeapp-merged_res-29:/layout_fragment_fridge.xml.flat",
+        "source": "com.example.recipeapp-main-31:/layout/fragment_fridge.xml"
     },
     {
-        "merged": "C:\\Users\\monte\\.gradle\\daemon\\7.4\\com.example.recipeapp-merged_res-47:\\mipmap-xhdpi_ic_launcher_round.webp.flat",
-        "source": "C:\\Users\\monte\\.gradle\\daemon\\7.4\\com.example.recipeapp-main-49:\\mipmap-xhdpi\\ic_launcher_round.webp"
+        "merged": "com.example.recipeapp-merged_res-29:/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "com.example.recipeapp-main-31:/mipmap-anydpi-v26/ic_launcher_round.xml"
     },
     {
-        "merged": "C:\\Users\\monte\\.gradle\\daemon\\7.4\\com.example.recipeapp-merged_res-47:\\xml_backup_rules.xml.flat",
-        "source": "C:\\Users\\monte\\.gradle\\daemon\\7.4\\com.example.recipeapp-main-49:\\xml\\backup_rules.xml"
+        "merged": "com.example.recipeapp-merged_res-29:/drawable_ic_launcher_background.xml.flat",
+        "source": "com.example.recipeapp-main-31:/drawable/ic_launcher_background.xml"
     },
     {
-        "merged": "C:\\Users\\monte\\.gradle\\daemon\\7.4\\com.example.recipeapp-merged_res-47:\\mipmap-anydpi-v26_ic_launcher.xml.flat",
-        "source": "C:\\Users\\monte\\.gradle\\daemon\\7.4\\com.example.recipeapp-main-49:\\mipmap-anydpi-v26\\ic_launcher.xml"
+        "merged": "com.example.recipeapp-merged_res-29:/mipmap-xhdpi_ic_launcher_round.webp.flat",
+        "source": "com.example.recipeapp-main-31:/mipmap-xhdpi/ic_launcher_round.webp"
     },
     {
-        "merged": "com.example.recipeapp-merged_res-47:/layout_fragment_fridge.xml.flat",
-        "source": "com.example.recipeapp-main-49:/layout/fragment_fridge.xml"
+        "merged": "com.example.recipeapp-merged_res-29:/drawable_ic_fridge.xml.flat",
+        "source": "com.example.recipeapp-main-31:/drawable/ic_fridge.xml"
     },
     {
-        "merged": "C:\\Users\\monte\\.gradle\\daemon\\7.4\\com.example.recipeapp-merged_res-47:\\mipmap-hdpi_ic_launcher.webp.flat",
-        "source": "C:\\Users\\monte\\.gradle\\daemon\\7.4\\com.example.recipeapp-main-49:\\mipmap-hdpi\\ic_launcher.webp"
+        "merged": "com.example.recipeapp-merged_res-29:/mipmap-xxxhdpi_ic_launcher_round.webp.flat",
+        "source": "com.example.recipeapp-main-31:/mipmap-xxxhdpi/ic_launcher_round.webp"
     },
     {
-        "merged": "C:\\Users\\monte\\.gradle\\daemon\\7.4\\com.example.recipeapp-merged_res-47:\\mipmap-xxxhdpi_ic_launcher.webp.flat",
-        "source": "C:\\Users\\monte\\.gradle\\daemon\\7.4\\com.example.recipeapp-main-49:\\mipmap-xxxhdpi\\ic_launcher.webp"
+        "merged": "com.example.recipeapp-merged_res-29:/mipmap-xxhdpi_ic_launcher_round.webp.flat",
+        "source": "com.example.recipeapp-main-31:/mipmap-xxhdpi/ic_launcher_round.webp"
     },
     {
-        "merged": "C:\\Users\\monte\\.gradle\\daemon\\7.4\\com.example.recipeapp-merged_res-47:\\drawable_ic_launcher_background.xml.flat",
-        "source": "C:\\Users\\monte\\.gradle\\daemon\\7.4\\com.example.recipeapp-main-49:\\drawable\\ic_launcher_background.xml"
+        "merged": "com.example.recipeapp-merged_res-29:/layout_fragment_grocery_list.xml.flat",
+        "source": "com.example.recipeapp-main-31:/layout/fragment_grocery_list.xml"
     },
     {
-        "merged": "C:\\Users\\monte\\.gradle\\daemon\\7.4\\com.example.recipeapp-merged_res-47:\\drawable-anydpi-v24_ic_launcher_foreground.xml.flat",
-        "source": "C:\\Users\\monte\\.gradle\\daemon\\7.4\\com.example.recipeapp-pngs-42:\\drawable-anydpi-v24\\ic_launcher_foreground.xml"
+        "merged": "com.example.recipeapp-merged_res-29:/mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "com.example.recipeapp-main-31:/mipmap-anydpi-v26/ic_launcher.xml"
     },
     {
-        "merged": "C:\\Users\\monte\\.gradle\\daemon\\7.4\\com.example.recipeapp-merged_res-47:\\menu_menu_bottom_navigation.xml.flat",
-        "source": "C:\\Users\\monte\\.gradle\\daemon\\7.4\\com.example.recipeapp-main-49:\\menu\\menu_bottom_navigation.xml"
+        "merged": "com.example.recipeapp-merged_res-29:/mipmap-xxxhdpi_ic_launcher.webp.flat",
+        "source": "com.example.recipeapp-main-31:/mipmap-xxxhdpi/ic_launcher.webp"
     },
     {
-        "merged": "C:\\Users\\monte\\.gradle\\daemon\\7.4\\com.example.recipeapp-merged_res-47:\\layout_activity_main.xml.flat",
-        "source": "C:\\Users\\monte\\.gradle\\daemon\\7.4\\com.example.recipeapp-main-49:\\layout\\activity_main.xml"
+        "merged": "com.example.recipeapp-merged_res-29:/mipmap-xxhdpi_ic_launcher.webp.flat",
+        "source": "com.example.recipeapp-main-31:/mipmap-xxhdpi/ic_launcher.webp"
     },
     {
-        "merged": "C:\\Users\\monte\\.gradle\\daemon\\7.4\\com.example.recipeapp-merged_res-47:\\drawable_ic_fridge.xml.flat",
-        "source": "C:\\Users\\monte\\.gradle\\daemon\\7.4\\com.example.recipeapp-main-49:\\drawable\\ic_fridge.xml"
+        "merged": "com.example.recipeapp-merged_res-29:/mipmap-xhdpi_ic_launcher.webp.flat",
+        "source": "com.example.recipeapp-main-31:/mipmap-xhdpi/ic_launcher.webp"
     },
     {
-        "merged": "C:\\Users\\monte\\.gradle\\daemon\\7.4\\com.example.recipeapp-merged_res-47:\\layout_fragment_recipes_list.xml.flat",
-        "source": "C:\\Users\\monte\\.gradle\\daemon\\7.4\\com.example.recipeapp-main-49:\\layout\\fragment_recipes_list.xml"
+        "merged": "com.example.recipeapp-merged_res-29:/xml_data_extraction_rules.xml.flat",
+        "source": "com.example.recipeapp-main-31:/xml/data_extraction_rules.xml"
     },
     {
-        "merged": "C:\\Users\\monte\\.gradle\\daemon\\7.4\\com.example.recipeapp-merged_res-47:\\drawable_ic_grocery.xml.flat",
-        "source": "C:\\Users\\monte\\.gradle\\daemon\\7.4\\com.example.recipeapp-main-49:\\drawable\\ic_grocery.xml"
+        "merged": "com.example.recipeapp-merged_res-29:/mipmap-hdpi_ic_launcher_round.webp.flat",
+        "source": "com.example.recipeapp-main-31:/mipmap-hdpi/ic_launcher_round.webp"
     },
     {
-        "merged": "C:\\Users\\monte\\.gradle\\daemon\\7.4\\com.example.recipeapp-merged_res-47:\\drawable_ic_delete.xml.flat",
-        "source": "C:\\Users\\monte\\.gradle\\daemon\\7.4\\com.example.recipeapp-main-49:\\drawable\\ic_delete.xml"
+        "merged": "com.example.recipeapp-merged_res-29:/menu_menu_bottom_navigation.xml.flat",
+        "source": "com.example.recipeapp-main-31:/menu/menu_bottom_navigation.xml"
     },
     {
-        "merged": "C:\\Users\\monte\\.gradle\\daemon\\7.4\\com.example.recipeapp-merged_res-47:\\mipmap-xxhdpi_ic_launcher_round.webp.flat",
-        "source": "C:\\Users\\monte\\.gradle\\daemon\\7.4\\com.example.recipeapp-main-49:\\mipmap-xxhdpi\\ic_launcher_round.webp"
+        "merged": "com.example.recipeapp-merged_res-29:/drawable_ic_grocery.xml.flat",
+        "source": "com.example.recipeapp-main-31:/drawable/ic_grocery.xml"
     },
     {
-        "merged": "C:\\Users\\monte\\.gradle\\daemon\\7.4\\com.example.recipeapp-merged_res-47:\\mipmap-xxxhdpi_ic_launcher_round.webp.flat",
-        "source": "C:\\Users\\monte\\.gradle\\daemon\\7.4\\com.example.recipeapp-main-49:\\mipmap-xxxhdpi\\ic_launcher_round.webp"
+        "merged": "com.example.recipeapp-merged_res-29:/layout_activity_main.xml.flat",
+        "source": "com.example.recipeapp-main-31:/layout/activity_main.xml"
     },
     {
-        "merged": "C:\\Users\\monte\\.gradle\\daemon\\7.4\\com.example.recipeapp-merged_res-47:\\mipmap-xxhdpi_ic_launcher.webp.flat",
-        "source": "C:\\Users\\monte\\.gradle\\daemon\\7.4\\com.example.recipeapp-main-49:\\mipmap-xxhdpi\\ic_launcher.webp"
-    },
-    {
-        "merged": "C:\\Users\\monte\\.gradle\\daemon\\7.4\\com.example.recipeapp-merged_res-47:\\mipmap-hdpi_ic_launcher_round.webp.flat",
-        "source": "C:\\Users\\monte\\.gradle\\daemon\\7.4\\com.example.recipeapp-main-49:\\mipmap-hdpi\\ic_launcher_round.webp"
-    },
-    {
-        "merged": "C:\\Users\\monte\\.gradle\\daemon\\7.4\\com.example.recipeapp-merged_res-47:\\mipmap-mdpi_ic_launcher_round.webp.flat",
-        "source": "C:\\Users\\monte\\.gradle\\daemon\\7.4\\com.example.recipeapp-main-49:\\mipmap-mdpi\\ic_launcher_round.webp"
-    },
-    {
-        "merged": "C:\\Users\\monte\\.gradle\\daemon\\7.4\\com.example.recipeapp-merged_res-47:\\xml_data_extraction_rules.xml.flat",
-        "source": "C:\\Users\\monte\\.gradle\\daemon\\7.4\\com.example.recipeapp-main-49:\\xml\\data_extraction_rules.xml"
-    },
-    {
-        "merged": "C:\\Users\\monte\\.gradle\\daemon\\7.4\\com.example.recipeapp-merged_res-47:\\mipmap-mdpi_ic_launcher.webp.flat",
-        "source": "C:\\Users\\monte\\.gradle\\daemon\\7.4\\com.example.recipeapp-main-49:\\mipmap-mdpi\\ic_launcher.webp"
+        "merged": "com.example.recipeapp-merged_res-29:/mipmap-mdpi_ic_launcher_round.webp.flat",
+        "source": "com.example.recipeapp-main-31:/mipmap-mdpi/ic_launcher_round.webp"
     }
 ]

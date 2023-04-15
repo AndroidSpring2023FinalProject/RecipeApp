@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.recipeapp-mergeDebugResources-45:/values-en-rXC/values-en-rXC.xml",
+            "outputFile": "com.example.recipeapp-mergeDebugResources-27:/values-en-rXC/values-en-rXC.xml",
             "map": [
                 {
                     "source": "C:\\Users\\monte\\.gradle\\caches\\transforms-3\\58dd3f4812eb78824b955d86d3508d52\\transformed\\appcompat-1.6.1\\res\\values-en-rXC\\values-en-rXC.xml",
