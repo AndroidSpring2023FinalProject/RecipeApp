@@ -12,7 +12,7 @@ class MainActivity : AppCompatActivity() {
 
         val fridgeFragment: Fragment = FridgeFragment()
         val groceryListFragment: Fragment = GroceryListFragment()
-        val recipesFragment: Fragment = RecipesListFragment()
+        val recipesFragment: Fragment = RecipeFragment()
 
         val btmNavView = findViewById<BottomNavigationView>(R.id.bottom_navigation)
 
