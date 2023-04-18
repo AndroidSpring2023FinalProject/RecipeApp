@@ -42,9 +42,9 @@ Scope: Everyone interested in being healthy, cutting time off from thinking of w
 
 **Stretch Features**
 
-* update the database when recipees are cooked 
-* Implement a button to reset the fridge database 
-* Create a custom recipees tab to add a users own recipees
+- [ ] update the database when recipees are cooked 
+- [ ] Implement a button to reset the fridge database 
+- [ ] Create a custom recipees tab to add a users own recipees
 
 
 ### 2. Screen Archetypes
