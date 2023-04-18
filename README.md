@@ -29,16 +29,16 @@ Scope: Everyone interested in being healthy, cutting time off from thinking of w
 
 **Required Features**
 
-* User is able to input a grocery item into an search box and choose the closest match
-* User is able to add quantity to the item
-[x] User is able to add the item to the fridge database
-[x] User is able to move between tabs using a navigation bar
-* User is able to scroll recipes on the recipes tab 
-* User is able to select a desired recipe
-* User is able to scroll recpie instructions on the detail recipe view
-* User is able to denote whether the recipe was cooked 
-* User is able to nagivate back to the recipes list
-[x] User is able to view items in the fridge database to make edits
+- [] User is able to input a grocery item into an search box and choose the closest match
+- [] User is able to add quantity to the item
+- [x] User is able to add the item to the fridge database
+- [x] User is able to move between tabs using a navigation bar
+- [] User is able to scroll recipes on the recipes tab 
+- [] User is able to select a desired recipe
+- [] User is able to scroll recpie instructions on the detail recipe view
+- [] User is able to denote whether the recipe was cooked 
+- [] User is able to nagivate back to the recipes list
+- [x] User is able to view items in the fridge database to make edits
 
 **Stretch Features**
 
