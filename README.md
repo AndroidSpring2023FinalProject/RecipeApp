@@ -19,7 +19,7 @@ Description:Website that takes in information on people’s groceries and create
 Category:Wellness website
 Mobile: yes
 Story: Already created recipes from already available items.
-Market: The health nut. The designated home cooker. College students
+Market: The health nut. The designated home cooker. College students.
 Habit: When there is a new recipe created there is a red notification bar.
 Scope: Everyone interested in being healthy, cutting time off from thinking of what to make.
 
@@ -31,14 +31,14 @@ Scope: Everyone interested in being healthy, cutting time off from thinking of w
 
 * User is able to input a grocery item into an search box and choose the closest match
 * User is able to add quantity to the item
-* User is able to add the item to the fridge database
-* User is able to move between tabs using a navigation bar
+[x] User is able to add the item to the fridge database
+[x] User is able to move between tabs using a navigation bar
 * User is able to scroll recipes on the recipes tab 
 * User is able to select a desired recipe
 * User is able to scroll recpie instructions on the detail recipe view
 * User is able to denote whether the recipe was cooked 
 * User is able to nagivate back to the recipes list
-* User is able to view items in the fridge database to make edits
+[x] User is able to view items in the fridge database to make edits
 
 **Stretch Features**
 
