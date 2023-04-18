@@ -33,7 +33,7 @@ Scope: Everyone interested in being healthy, cutting time off from thinking of w
 - [ ] User is able to add quantity to the item
 - [x] User is able to add the item to the fridge database
 - [x] User is able to move between tabs using a navigation bar
-- [ ] User is able to scroll recipes on the recipes tab 
+- [x ] User is able to scroll recipes on the recipes tab (api not fully connected)
 - [ ] User is able to select a desired recipe
 - [ ] User is able to scroll recpie instructions on the detail recipe view
 - [ ] User is able to denote whether the recipe was cooked 
