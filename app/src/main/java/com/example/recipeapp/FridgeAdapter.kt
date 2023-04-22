@@ -11,28 +11,28 @@ import androidx.recyclerview.widget.RecyclerView
 import kotlinx.coroutines.Dispatchers.IO
 import kotlin.coroutines.coroutineContext
 
-class FridgeAdapter(private val context: Context, private val ingredients: MutableList<Ingredient>): RecyclerView.Adapter<FridgeAdapter.ItemViewHolder>() {
+class FridgeAdapter(private val context: Context, private val ingredients: MutableList<Ingredient>, var listener: OnFridgeItemClickListener): RecyclerView.Adapter<FridgeAdapter.ItemViewHolder>() {
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ItemViewHolder{
         val view = LayoutInflater.from(parent.context).inflate(R.layout.fridge_item, parent, false)
         return ItemViewHolder(view)
     }
 
-    inner class ItemViewHolder(iView: View): RecyclerView.ViewHolder(iView), View.OnClickListener{
+    inner class ItemViewHolder(iView: View): RecyclerView.ViewHolder(iView){
         var iIngredient: Ingredient? = null
         val iIngredientName: TextView = iView.findViewById<View>(R.id.tvIngredientItemName) as TextView
         val iIngredientQuantity: TextView = iView.findViewById<View>(R.id.tvIngredientItemQuantity) as TextView
         val iIngredientDelete: ImageButton = iView.findViewById(R.id.iBtnDelete) as ImageButton
 
-        init{
-            iIngredientDelete.setOnClickListener(this)
-        }
-        override fun onClick(v: View?){
-            val ingredient = ingredients[adapterPosition]
-            val toast = Toast.makeText(context, ingredient.name, Toast.LENGTH_SHORT)
-            toast.show()
-            ingredients.remove(ingredient)
-            notifyItemRemoved(adapterPosition)
-        }
+//        init{
+//            iIngredientDelete.setOnClickListener(this)
+//        }
+//        override fun onClick(v: View?){
+//            val ingredient = ingredients[adapterPosition]
+//            val toast = Toast.makeText(context, ingredient.name, Toast.LENGTH_SHORT)
+//            toast.show()
+//            ingredients.remove(ingredient)
+//            notifyItemRemoved(adapterPosition)
+//        }
     }
 
     override fun onBindViewHolder(holder: ItemViewHolder, position: Int){
@@ -40,6 +40,13 @@ class FridgeAdapter(private val context: Context, private val ingredients: Mutab
         holder.iIngredient = ingredient
         holder.iIngredientName.text = ingredient.name
         holder.iIngredientQuantity.text = ingredient.quantity
+        holder.iIngredientDelete.setOnClickListener{
+            holder.iIngredient.let { ingredient ->
+                if (ingredient != null) {
+                    listener?.onItemClick(ingredient)
+                }
+            }
+        }
     }
 
     override fun getItemCount(): Int {

@@ -16,8 +16,8 @@ import kotlinx.coroutines.Dispatchers.IO
 import kotlinx.coroutines.launch
 import org.w3c.dom.Text
 
-class FridgeFragment : Fragment() {
-    private val ingredients = mutableListOf<Ingredient>()
+class FridgeFragment : Fragment(), OnFridgeItemClickListener {
+    //private val ingredients = mutableListOf<Ingredient>()
     private lateinit var rvIngredients: RecyclerView
     private lateinit var tvFridgeLabel: TextView;
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -31,7 +31,7 @@ class FridgeFragment : Fragment() {
         val btnDeleteFridge = view.findViewById<ImageButton>(R.id.iBtnDeleteAll)
         val test = view.findViewById<Button>(R.id.testButton)
         tvFridgeLabel = view.findViewById<TextView>(R.id.label)
-        rvIngredients.adapter = FridgeAdapter(requireContext(), ingredients)
+        rvIngredients.adapter = FridgeAdapter(requireContext(), FridgeIngredients.ingredients, this)
         rvIngredients.layoutManager = LinearLayoutManager(requireContext())
 
         btnDeleteFridge.setOnClickListener{
@@ -39,18 +39,18 @@ class FridgeFragment : Fragment() {
             lifecycleScope.launch(IO) {
                 (requireActivity().application as IngredientApplication).db.fridgeDao().deleteAll()
             }
-            ingredients.clear()
+            FridgeIngredients.deleteAllIngredients()
             rvIngredients.adapter?.notifyDataSetChanged()
         }
         test.setOnClickListener{
             val apple = Ingredient(1, "apple", "5")
             val banana = Ingredient(2, "banana", "1")
             val pear = Ingredient(3, "pear", "1")
-            ingredients.add(apple)
-            ingredients.add(banana)
-            ingredients.add(pear)
+            FridgeIngredients.addIngredient(apple)
+            FridgeIngredients.addIngredient(banana)
+            FridgeIngredients.addIngredient(pear)
             lifecycleScope.launch(IO){
-                (requireActivity().application as IngredientApplication).db.fridgeDao().insertAll(ingredients)
+                (requireActivity().application as IngredientApplication).db.fridgeDao().insertAll(FridgeIngredients.ingredients)
             }
             rvIngredients.adapter?.notifyDataSetChanged()
         }
@@ -73,7 +73,7 @@ class FridgeFragment : Fragment() {
 
     fun deleteIngredient(ingredient: Ingredient){
         lifecycleScope.launch(IO) {
-            (MainActivity() as IngredientApplication).db.fridgeDao().delete(ingredient)
+            (requireActivity().application  as IngredientApplication).db.fridgeDao().delete(ingredient)
         }
     }
 
@@ -91,10 +91,10 @@ class FridgeFragment : Fragment() {
                         ingredient.quantity
                     )
                 }.also { mappedList ->
-                    ingredients.clear()
-                    ingredients.addAll(mappedList)
+                    FridgeIngredients.deleteAllIngredients()
+                    FridgeIngredients.addIngredients(mappedList as ArrayList<Ingredient>)
                     rvIngredients.adapter?.notifyDataSetChanged()
-                    if(ingredients.size == 0){
+                    if(FridgeIngredients.ingredients.size < 1){
                         tvFridgeLabel.setText("Fridge is empty")
                     }else{
                         tvFridgeLabel.setText("Fridge")
@@ -102,6 +102,19 @@ class FridgeFragment : Fragment() {
                 }
             }
         }
+    }
+
+    override fun onItemClick(ingredient: Ingredient) {
+        var toast = Toast.makeText(this.requireContext(), "Deleting " + ingredient.name, Toast.LENGTH_SHORT).show()
+        FridgeIngredients.decrementIngredient(ingredient)
+        if(FridgeIngredients.ingredients.contains(ingredient)){
+            lifecycleScope.launch(IO) {
+                (requireActivity().application as IngredientApplication).db.fridgeDao().updateIngredient(ingredient)
+            }
+        }else{
+            deleteIngredient(ingredient)
+        }
+        rvIngredients.adapter?.notifyDataSetChanged()
     }
 
 
