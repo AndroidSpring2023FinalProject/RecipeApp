@@ -1,7 +1,6 @@
 package com.example.recipeapp
 
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -9,12 +8,14 @@ import android.widget.Button
 import android.widget.ImageButton
 import android.widget.TextView
 import android.widget.Toast
+import androidx.fragment.app.Fragment
 import androidx.lifecycle.lifecycleScope
+import androidx.recyclerview.widget.DividerItemDecoration
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import kotlinx.coroutines.Dispatchers.IO
 import kotlinx.coroutines.launch
-import org.w3c.dom.Text
+
 
 class FridgeFragment : Fragment(), OnFridgeItemClickListener {
     //private val ingredients = mutableListOf<Ingredient>()
@@ -34,6 +35,12 @@ class FridgeFragment : Fragment(), OnFridgeItemClickListener {
         rvIngredients.adapter = FridgeAdapter(requireContext(), FridgeIngredients.ingredients, this)
         rvIngredients.layoutManager = LinearLayoutManager(requireContext())
 
+        rvIngredients.addItemDecoration(
+            DividerItemDecoration(
+                rvIngredients.getContext(),
+                DividerItemDecoration.VERTICAL
+            )
+        )
         btnDeleteFridge.setOnClickListener{
             val deleteMsg = Toast.makeText(requireContext(), "Deleting fridge...", Toast.LENGTH_SHORT).show()
             lifecycleScope.launch(IO) {
