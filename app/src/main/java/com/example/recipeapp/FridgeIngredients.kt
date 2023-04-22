@@ -26,7 +26,7 @@ object FridgeIngredients{
         }else{
             Log.d("I dont", "no")
             this.ingredients.add(ingredient)
-            this.ingredients.get(this.ingredients.size-1).quantity = "1"
+            this.ingredients.get(this.ingredients.size-1).quantity = ingredient.quantity
         }
 
     }
@@ -68,9 +68,6 @@ object FridgeIngredients{
         this.ingredients.get(index).quantity = (this.ingredients.get(index).quantity.toInt()+ingredient.quantity.toInt()).toString()
     }
 
-    //    fun getIngredients(): ArrayList<Ingredient>{
-//        return this.ingredients
-//    }
     private fun isQuantityEmpty(ingredient: Ingredient) :Boolean{
         if(ingredient.quantity.toInt() < 1){
             Log.d("Test", "Quantity: " + ingredient.quantity.toInt())
