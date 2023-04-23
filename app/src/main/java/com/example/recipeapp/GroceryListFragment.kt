@@ -112,8 +112,16 @@ class GroceryListFragment : Fragment(), OnGroceryItemClickListener {
 
     override fun onItemClickCheck(ingredient: IngredientGrocery) {
         var toast = Toast.makeText(this.requireContext(), "Adding " + ingredient.name + " to fridge", Toast.LENGTH_SHORT).show()
-        val fridgeIngredient = Ingredient(ingredient.id, ingredient.name, ingredient.quantity)
+        val fridgeIngredient = Ingredient(ingredient.id, ingredient.name, "1")
+        var curIndex = 0;
+
         FridgeIngredients.addIngredient(fridgeIngredient)
+        FridgeIngredients.ingredients.forEachIndexed{index, eachIngredient ->
+            Log.d("Testing", eachIngredient.name)
+            if(ingredient.name == eachIngredient.name){
+                curIndex = index
+            }
+        }
         GroceryIngredients.decrementIngredient(ingredient)
 
         if(GroceryIngredients.ingredients.contains(ingredient)){
@@ -121,7 +129,7 @@ class GroceryListFragment : Fragment(), OnGroceryItemClickListener {
                 (requireActivity().application as IngredientApplication).db.groceryDao().updateIngredient(ingredient)
             }
             lifecycleScope.launch(Dispatchers.IO){
-                (requireActivity().application as IngredientApplication).db.fridgeDao().insert(fridgeIngredient)
+                (requireActivity().application as IngredientApplication).db.fridgeDao().insert(FridgeIngredients.ingredients.get(curIndex))
             }
         }else{
             deleteIngredient(ingredient)
