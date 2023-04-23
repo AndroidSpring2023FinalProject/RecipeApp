@@ -1,31 +1,79 @@
 package com.example.recipeapp
 
+import android.content.Intent
 import android.os.Bundle
+import android.util.Log
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Button
+import android.widget.TextView
+import android.widget.Toast
+import androidx.lifecycle.lifecycleScope
+import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.RecyclerView
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.launch
 
-// TODO: Rename parameter arguments, choose names that match
-// the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
-private const val ARG_PARAM1 = "param1"
-private const val ARG_PARAM2 = "param2"
 
-/**
- * A simple [Fragment] subclass.
- * Use the [GroceryListFragment.newInstance] factory method to
- * create an instance of this fragment.
- */
-class GroceryListFragment : Fragment() {
-    // TODO: Rename and change types of parameters
-    private var param1: String? = null
-    private var param2: String? = null
-
+class GroceryListFragment : Fragment(), OnGroceryItemClickListener {
+    private lateinit var rvIngredients: RecyclerView
+    private lateinit var tvGroceryLabel: TextView
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        arguments?.let {
-            param1 = it.getString(ARG_PARAM1)
-            param2 = it.getString(ARG_PARAM2)
+    }
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+        tvGroceryLabel = view.findViewById(R.id.labelGrocery)
+        rvIngredients = view.findViewById(R.id.rvGroceryIngredients)
+        rvIngredients.adapter = GroceryAdapter(requireContext(), GroceryIngredients.ingredients, this)
+        rvIngredients.layoutManager = LinearLayoutManager(requireContext())
+        val addIngButton = view.findViewById<Button>(R.id.btnAddIngredient)
+        val test = view.findViewById<Button>(R.id.testButton)
+        addIngButton.setOnClickListener{
+            val intent = Intent(requireContext(), AddGroceryIngredient::class.java)
+            requireContext().startActivity(intent)
+        }
+        test.setOnClickListener{
+            val apple = IngredientGrocery(1, "apple", "5")
+            val banana = IngredientGrocery(2, "banana", "3")
+            val pear = IngredientGrocery(3, "pear", "1")
+            GroceryIngredients.addIngredient(apple)
+            GroceryIngredients.addIngredient(banana)
+            GroceryIngredients.addIngredient(pear)
+            Log.d("Test Test button", GroceryIngredients.ingredients.toString())
+            lifecycleScope.launch(Dispatchers.IO){
+                (requireActivity().application as IngredientApplication).db.groceryDao().insertAll(GroceryIngredients.ingredients)
+            }
+            rvIngredients.adapter?.notifyDataSetChanged()
+        }
+        fetchGroceryList()
+        rvIngredients.adapter?.notifyDataSetChanged()
+    }
+    fun fetchGroceryList(){
+        lifecycleScope.launch{
+            (requireActivity().application as IngredientApplication).db.groceryDao().getAll().collect(){ databaseList ->
+                databaseList.map { ingredient ->
+                    Log.d("Database Ing", ingredient.toString())
+                    IngredientGrocery(
+                        ingredient.id,
+                        ingredient.name,
+                        ingredient.quantity
+                    )
+                }.also { mappedList ->
+                    Log.d("Mapp", mappedList.toString())
+                    GroceryIngredients.deleteAllIngredients()
+                    GroceryIngredients.addIngredients(mappedList as ArrayList<IngredientGrocery>)
+                    rvIngredients.adapter?.notifyDataSetChanged()
+                    if(GroceryIngredients.ingredients.size < 1){
+                        tvGroceryLabel.setText("List is empty")
+                    }else{
+                        tvGroceryLabel.setText("Grocery List")
+                    }
+                }
+            }
         }
     }
 
@@ -38,22 +86,46 @@ class GroceryListFragment : Fragment() {
     }
 
     companion object {
-        /**
-         * Use this factory method to create a new instance of
-         * this fragment using the provided parameters.
-         *
-         * @param param1 Parameter 1.
-         * @param param2 Parameter 2.
-         * @return A new instance of fragment GroceryListFragment.
-         */
-        // TODO: Rename and change types and number of parameters
-        @JvmStatic
-        fun newInstance(param1: String, param2: String) =
-            GroceryListFragment().apply {
-                arguments = Bundle().apply {
-                    putString(ARG_PARAM1, param1)
-                    putString(ARG_PARAM2, param2)
-                }
+        fun newInstance(): GroceryListFragment{
+            return GroceryListFragment()
+        }
+    }
+
+    fun deleteIngredient(ingredient: IngredientGrocery){
+        lifecycleScope.launch(Dispatchers.IO) {
+            (requireActivity().application  as IngredientApplication).db.groceryDao().delete(ingredient)
+        }
+    }
+
+    override fun onItemClickDelete(ingredient: IngredientGrocery) {
+        var toast = Toast.makeText(this.requireContext(), "Deleting " + ingredient.name, Toast.LENGTH_SHORT).show()
+        GroceryIngredients.decrementIngredient(ingredient)
+        if(GroceryIngredients.ingredients.contains(ingredient)){
+            lifecycleScope.launch(Dispatchers.IO) {
+                (requireActivity().application as IngredientApplication).db.groceryDao().updateIngredient(ingredient)
             }
+        }else{
+            deleteIngredient(ingredient)
+        }
+        rvIngredients.adapter?.notifyDataSetChanged()
+    }
+
+    override fun onItemClickCheck(ingredient: IngredientGrocery) {
+        var toast = Toast.makeText(this.requireContext(), "Adding " + ingredient.name + " to fridge", Toast.LENGTH_SHORT).show()
+        val fridgeIngredient = Ingredient(ingredient.id, ingredient.name, ingredient.quantity)
+        FridgeIngredients.addIngredient(fridgeIngredient)
+        GroceryIngredients.decrementIngredient(ingredient)
+
+        if(GroceryIngredients.ingredients.contains(ingredient)){
+            lifecycleScope.launch(Dispatchers.IO) {
+                (requireActivity().application as IngredientApplication).db.groceryDao().updateIngredient(ingredient)
+            }
+            lifecycleScope.launch(Dispatchers.IO){
+                (requireActivity().application as IngredientApplication).db.fridgeDao().insert(fridgeIngredient)
+            }
+        }else{
+            deleteIngredient(ingredient)
+        }
+        rvIngredients.adapter?.notifyDataSetChanged()
     }
 }

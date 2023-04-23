@@ -5,9 +5,10 @@ import androidx.room.Database
 import androidx.room.Room
 import androidx.room.RoomDatabase
 
-@Database(entities = [Ingredient::class], version = 1)
+@Database(entities = [Ingredient::class, IngredientGrocery::class], version = 1)
 abstract class AppDatabase : RoomDatabase(){
     abstract fun fridgeDao() : FridgeDao
+    abstract fun groceryDao() : GroceryDao
     companion object {
         @Volatile
         private var INSTANCE: AppDatabase? = null

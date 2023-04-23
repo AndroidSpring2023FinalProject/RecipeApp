@@ -3,7 +3,10 @@ package com.example.recipeapp
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.fragment.app.Fragment
+import androidx.lifecycle.lifecycleScope
 import com.google.android.material.bottomnavigation.BottomNavigationView
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.launch
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -13,6 +16,10 @@ class MainActivity : AppCompatActivity() {
         val fridgeFragment: Fragment = FridgeFragment()
         val groceryListFragment: Fragment = GroceryListFragment()
         val recipesFragment: Fragment = RecipeFragment()
+
+        lifecycleScope.launch(Dispatchers.IO) {
+            (application as IngredientApplication).db.groceryDao().deleteAll()
+        }
 
         val btmNavView = findViewById<BottomNavigationView>(R.id.bottom_navigation)
 
