@@ -1,5 +1,5 @@
 package com.example.recipeapp
 
-public interface OnFridgeItemClickListener {
+interface OnFridgeItemClickListener {
     fun onItemClick(ingredient: Ingredient)
 }

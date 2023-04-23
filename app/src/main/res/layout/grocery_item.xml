@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+    android:id="@+id/tvIngredientGroceryItemName"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:text="IngredientName"
+    android:textSize="24sp"
+    android:textStyle="bold"
+    android:layout_marginRight="8dp"
+    app:layout_constraintEnd_toStartOf="@+id/tvIngredientGroceryItemQuantity"
+    app:layout_constraintHorizontal_bias="0.0"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvIngredientGroceryItemQuantity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Quantity: X"
+        android:textSize="24sp"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toBottomOf="@+id/tvIngredientGroceryItemName"
+        app:layout_constraintEnd_toStartOf="@+id/iBtnGroceryItemCheck"
+        app:layout_constraintTop_toTopOf="@+id/tvIngredientGroceryItemName"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <ImageButton
+        android:id="@+id/iBtnGroceryItemCheck"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        app:layout_constraintBottom_toBottomOf="@+id/iBtnGroceryItemDelete"
+        app:layout_constraintEnd_toStartOf="@+id/iBtnGroceryItemDelete"
+        app:layout_constraintTop_toTopOf="@+id/iBtnGroceryItemDelete"
+        app:srcCompat="@drawable/ic_cart_checked" />
+
+    <ImageButton
+    android:id="@+id/iBtnGroceryItemDelete"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    app:layout_constraintBottom_toBottomOf="@+id/tvIngredientGroceryItemQuantity"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintTop_toTopOf="@+id/tvIngredientGroceryItemQuantity"
+    app:srcCompat="@drawable/ic_delete" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>

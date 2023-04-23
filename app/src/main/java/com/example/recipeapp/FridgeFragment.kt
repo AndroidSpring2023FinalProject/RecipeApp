@@ -1,6 +1,7 @@
 package com.example.recipeapp
 
 import android.os.Bundle
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -13,6 +14,7 @@ import androidx.lifecycle.lifecycleScope
 import androidx.recyclerview.widget.DividerItemDecoration
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.Dispatchers.IO
 import kotlinx.coroutines.launch
 
@@ -51,16 +53,19 @@ class FridgeFragment : Fragment(), OnFridgeItemClickListener {
         }
         test.setOnClickListener{
             val apple = Ingredient(1, "apple", "5")
-            val banana = Ingredient(2, "banana", "1")
+            val banana = Ingredient(2, "banana", "3")
             val pear = Ingredient(3, "pear", "1")
             FridgeIngredients.addIngredient(apple)
             FridgeIngredients.addIngredient(banana)
             FridgeIngredients.addIngredient(pear)
-            lifecycleScope.launch(IO){
+            Log.d("Test Test button", FridgeIngredients.ingredients.toString())
+            lifecycleScope.launch(Dispatchers.IO){
                 (requireActivity().application as IngredientApplication).db.fridgeDao().insertAll(FridgeIngredients.ingredients)
             }
+            //fetchGroceryList()
             rvIngredients.adapter?.notifyDataSetChanged()
         }
+
         fetchFridge()
     }
 
