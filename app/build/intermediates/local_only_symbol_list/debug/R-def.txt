@@ -7,6 +7,7 @@ color purple_700
 color teal_200
 color teal_700
 color white
+drawable baseline_add_24
 drawable ic_delete
 drawable ic_delete_all
 drawable ic_fridge
@@ -17,12 +18,17 @@ drawable ic_recipes
 id action_fridge
 id action_grocery_list
 id action_recipes
+id add
 id bottom_navigation
+id button
+id divider
 id frame_layout
+id groceryListItem
 id iBtnDelete
 id iBtnDeleteAll
 id imageView2
 id label
+id nameOfList
 id recipeslist
 id rvFridgeIngredients
 id testButton
@@ -35,6 +41,7 @@ layout fragment_fridge
 layout fragment_grocery_list
 layout fragment_recipe
 layout fridge_item
+layout grocerylists_items
 layout recipe_item
 menu menu_bottom_navigation
 mipmap ic_launcher
