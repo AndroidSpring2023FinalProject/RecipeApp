@@ -32,7 +32,7 @@ class FridgeFragment : Fragment(), OnFridgeItemClickListener {
         super.onViewCreated(view, savedInstanceState)
         rvIngredients = view.findViewById(R.id.rvFridgeIngredients)
         val btnDeleteFridge = view.findViewById<ImageButton>(R.id.iBtnDeleteAll)
-        val test = view.findViewById<Button>(R.id.testButton)
+        //val test = view.findViewById<Button>(R.id.testButton)
         tvFridgeLabel = view.findViewById<TextView>(R.id.label)
         rvIngredients.adapter = FridgeAdapter(requireContext(), FridgeIngredients.ingredients, this)
         rvIngredients.layoutManager = LinearLayoutManager(requireContext())
@@ -51,20 +51,20 @@ class FridgeFragment : Fragment(), OnFridgeItemClickListener {
             FridgeIngredients.deleteAllIngredients()
             rvIngredients.adapter?.notifyDataSetChanged()
         }
-        test.setOnClickListener{
-            val apple = Ingredient(1, "apple", "5")
-            val banana = Ingredient(2, "banana", "3")
-            val pear = Ingredient(3, "pear", "1")
-            FridgeIngredients.addIngredient(apple)
-            FridgeIngredients.addIngredient(banana)
-            FridgeIngredients.addIngredient(pear)
-            Log.d("Test Test button", FridgeIngredients.ingredients.toString())
-            lifecycleScope.launch(Dispatchers.IO){
-                (requireActivity().application as IngredientApplication).db.fridgeDao().insertAll(FridgeIngredients.ingredients)
-            }
-            //fetchGroceryList()
-            rvIngredients.adapter?.notifyDataSetChanged()
-        }
+//        test.setOnClickListener{
+//            val apple = Ingredient(1, "apple", "5")
+//            val banana = Ingredient(2, "banana", "3")
+//            val pear = Ingredient(3, "pear", "1")
+//            FridgeIngredients.addIngredient(apple)
+//            FridgeIngredients.addIngredient(banana)
+//            FridgeIngredients.addIngredient(pear)
+//            Log.d("Test Test button", FridgeIngredients.ingredients.toString())
+//            lifecycleScope.launch(Dispatchers.IO){
+//                (requireActivity().application as IngredientApplication).db.fridgeDao().insertAll(FridgeIngredients.ingredients)
+//            }
+//            //fetchGroceryList()
+//            rvIngredients.adapter?.notifyDataSetChanged()
+//        }
 
         fetchFridge()
     }
