@@ -19,6 +19,7 @@ import kotlinx.serialization.json.Json
 import okhttp3.Headers
 import org.json.JSONException
 import androidx.appcompat.app.AppCompatActivity
+import androidx.recyclerview.widget.LinearLayoutManager
 
 
 fun createJson() = Json {
@@ -27,10 +28,6 @@ fun createJson() = Json {
     useAlternativeNames = false
 }
 
-// TODO: Rename parameter arguments, choose names that match
-// the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
-private const val ARG_PARAM1 = "param1"
-private lateinit var reciperecyclerview: RecyclerView
 
 /**
  * A simple [Fragment] subclass.
@@ -38,19 +35,16 @@ private lateinit var reciperecyclerview: RecyclerView
  * create an instance of this fragment.
  */
 class RecipeFragment : Fragment() {
+    private lateinit var reciperecyclerview: RecyclerView
+
     private val recipeslist= mutableListOf<RecipeItem>()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+    }
 
-        binding = ActivityMainBinding.inflate(layoutInflater)
-        val view= binding.root
-        setContentView(view)
-
-        reciperecyclerview=findViewById(R.id.recipeslist)
-        val therecipeadapter= context?.let { RecipeAdapter(it, recipeslist) }
-
-
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
     }
 
     override fun onCreateView(
@@ -58,16 +52,23 @@ class RecipeFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_recipe, container, false)
+        val view = inflater.inflate(R.layout.fragment_recipe, container, false)
+        reciperecyclerview = view.findViewById<RecyclerView>(R.id.recipeslist)
+        reciperecyclerview.layoutManager = LinearLayoutManager(context)
+        reciperecyclerview.adapter = RecipeAdapter(requireContext(), recipeslist)
+        updateAdapter(reciperecyclerview)
+        return view
     }
 
 
-    private fun updateAdapter(progressBar: ContentLoadingProgressBar, recyclerView: RecyclerView){
-        progressBar.show()
+    private fun updateAdapter(recyclerView: RecyclerView){
+        //progressBar.show()
 
         val client = AsyncHttpClient()
         val params = RequestParams()
-        params["api-key"]="d0ae067c7b234078840996184bc99937"
+
+        params["apiKey"]="d0ae067c7b234078840996184bc99937"
+        params["number"]="10"
 
         client.get("https://api.spoonacular.com/recipes/random", params, object : JsonHttpResponseHandler(){
 
@@ -89,7 +90,7 @@ class RecipeFragment : Fragment() {
                     )
                     parsedJson.docs?.let{ list->
                         recipeslist.addAll(list)
-                        therecipeadapter.notifyDataSetChanged()
+                        reciperecyclerview.adapter?.notifyDataSetChanged()
                     }
                 } catch(e: JSONException){
                     Log.e(TAG, "Exception in parsing: $e")
