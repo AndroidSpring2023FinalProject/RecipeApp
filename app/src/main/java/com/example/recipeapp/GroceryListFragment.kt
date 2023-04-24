@@ -10,6 +10,7 @@ import android.view.ViewGroup
 import android.widget.Button
 import android.widget.TextView
 import android.widget.Toast
+import androidx.activity.result.contract.ActivityResultContracts
 import androidx.lifecycle.lifecycleScope
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
@@ -31,24 +32,32 @@ class GroceryListFragment : Fragment(), OnGroceryItemClickListener {
         rvIngredients.adapter = GroceryAdapter(requireContext(), GroceryIngredients.ingredients, this)
         rvIngredients.layoutManager = LinearLayoutManager(requireContext())
         val addIngButton = view.findViewById<Button>(R.id.btnAddIngredient)
-        val test = view.findViewById<Button>(R.id.testButton)
+        //val test = view.findViewById<Button>(R.id.testButton)
         addIngButton.setOnClickListener{
             val intent = Intent(requireContext(), AddGroceryIngredient::class.java)
-            requireContext().startActivity(intent)
+            activity?.startActivityForResult(intent, 1)
         }
-        test.setOnClickListener{
-            val apple = IngredientGrocery(1, "apple", "5")
-            val banana = IngredientGrocery(2, "banana", "3")
-            val pear = IngredientGrocery(3, "pear", "1")
-            GroceryIngredients.addIngredient(apple)
-            GroceryIngredients.addIngredient(banana)
-            GroceryIngredients.addIngredient(pear)
-            Log.d("Test Test button", GroceryIngredients.ingredients.toString())
-            lifecycleScope.launch(Dispatchers.IO){
-                (requireActivity().application as IngredientApplication).db.groceryDao().insertAll(GroceryIngredients.ingredients)
-            }
-            rvIngredients.adapter?.notifyDataSetChanged()
-        }
+//        test.setOnClickListener{
+//            val apple = IngredientGrocery(1, "apple", "5")
+//            val banana = IngredientGrocery(2, "banana", "3")
+//            val pear = IngredientGrocery(3, "pear", "1")
+//            GroceryIngredients.addIngredient(apple)
+//            GroceryIngredients.addIngredient(banana)
+//            GroceryIngredients.addIngredient(pear)
+//            Log.d("Test Test button", GroceryIngredients.ingredients.toString())
+//            lifecycleScope.launch(Dispatchers.IO){
+//                (requireActivity().application as IngredientApplication).db.beginTransaction()
+//                try {
+//                    (requireActivity().application as IngredientApplication).db.groceryDao().insertAll(GroceryIngredients.ingredients)
+//                    (requireActivity().application as IngredientApplication).db.setTransactionSuccessful()
+//                }finally {
+//                    (requireActivity().application as IngredientApplication).db.endTransaction()
+//                    //(requireActivity().application as IngredientApplication).db.close()
+//                }
+//
+//            }
+//            rvIngredients.adapter?.notifyDataSetChanged()
+//        }
         fetchGroceryList()
         rvIngredients.adapter?.notifyDataSetChanged()
     }
@@ -136,4 +145,8 @@ class GroceryListFragment : Fragment(), OnGroceryItemClickListener {
         }
         rvIngredients.adapter?.notifyDataSetChanged()
     }
+
+//    @Override fun onActivityResult(requestCode: Int, resultCode: Int,data: Intent){
+//        super.onActivityResult(requestCode, resultCode, data)
+//    }
 }
