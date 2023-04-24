@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\Sydney\AndroidStudioProjects\RecipeApp\app\src\main\AndroidManifest.xml:2:1-31:12
-INJECTED from C:\Users\Sydney\AndroidStudioProjects\RecipeApp\app\src\main\AndroidManifest.xml:2:1-31:12
-INJECTED from C:\Users\Sydney\AndroidStudioProjects\RecipeApp\app\src\main\AndroidManifest.xml:2:1-31:12
-INJECTED from C:\Users\Sydney\AndroidStudioProjects\RecipeApp\app\src\main\AndroidManifest.xml:2:1-31:12
+ADDED from C:\Users\Sydney\AndroidStudioProjects\RecipeApp\app\src\main\AndroidManifest.xml:2:1-38:12
+INJECTED from C:\Users\Sydney\AndroidStudioProjects\RecipeApp\app\src\main\AndroidManifest.xml:2:1-38:12
+INJECTED from C:\Users\Sydney\AndroidStudioProjects\RecipeApp\app\src\main\AndroidManifest.xml:2:1-38:12
+INJECTED from C:\Users\Sydney\AndroidStudioProjects\RecipeApp\app\src\main\AndroidManifest.xml:2:1-38:12
 MERGED from [com.google.android.material:material:1.8.0] C:\Users\Sydney\.gradle\caches\transforms-3\3d52fed6a37ef4efbd34cc2e0cfac305\transformed\material-1.8.0\AndroidManifest.xml:17:1-26:12
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] C:\Users\Sydney\.gradle\caches\transforms-3\83095ac82172a7d11ec931d243e0af4a\transformed\constraintlayout-2.1.4\AndroidManifest.xml:2:1-11:12
 MERGED from [com.codepath.libraries:asynchttpclient:2.2.0] C:\Users\Sydney\.gradle\caches\transforms-3\1e7879190a1561f3ec3c80ff705a08ee\transformed\asynchttpclient-2.2.0\AndroidManifest.xml:2:1-11:12
@@ -69,27 +69,27 @@ MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\Sydney\.gradle\c
 MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\Sydney\.gradle\caches\transforms-3\5f96b3f95c061ea793c713b32c764876\transformed\localbroadcastmanager-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.print:print:1.0.0] C:\Users\Sydney\.gradle\caches\transforms-3\06fd4136c6d37cadbf8951dad8534e56\transformed\print-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [com.facebook.stetho:stetho:1.5.1] C:\Users\Sydney\.gradle\caches\transforms-3\a7865301a82d7b19c10bc7fc83a4e394\transformed\stetho-1.5.1\AndroidManifest.xml:2:1-13:12
-INJECTED from C:\Users\Sydney\AndroidStudioProjects\RecipeApp\app\src\main\AndroidManifest.xml:2:1-31:12
-INJECTED from C:\Users\Sydney\AndroidStudioProjects\RecipeApp\app\src\main\AndroidManifest.xml:2:1-31:12
-INJECTED from C:\Users\Sydney\AndroidStudioProjects\RecipeApp\app\src\main\AndroidManifest.xml:2:1-31:12
+INJECTED from C:\Users\Sydney\AndroidStudioProjects\RecipeApp\app\src\main\AndroidManifest.xml:2:1-38:12
+INJECTED from C:\Users\Sydney\AndroidStudioProjects\RecipeApp\app\src\main\AndroidManifest.xml:2:1-38:12
+INJECTED from C:\Users\Sydney\AndroidStudioProjects\RecipeApp\app\src\main\AndroidManifest.xml:2:1-38:12
 	package
 		INJECTED from C:\Users\Sydney\AndroidStudioProjects\RecipeApp\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\Sydney\AndroidStudioProjects\RecipeApp\app\src\main\AndroidManifest.xml:2:1-31:12
+		ADDED from C:\Users\Sydney\AndroidStudioProjects\RecipeApp\app\src\main\AndroidManifest.xml:2:1-38:12
 		INJECTED from C:\Users\Sydney\AndroidStudioProjects\RecipeApp\app\src\main\AndroidManifest.xml
 	android:versionName
 		INJECTED from C:\Users\Sydney\AndroidStudioProjects\RecipeApp\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\Sydney\AndroidStudioProjects\RecipeApp\app\src\main\AndroidManifest.xml:2:1-31:12
+		ADDED from C:\Users\Sydney\AndroidStudioProjects\RecipeApp\app\src\main\AndroidManifest.xml:2:1-38:12
 		INJECTED from C:\Users\Sydney\AndroidStudioProjects\RecipeApp\app\src\main\AndroidManifest.xml
 	xmlns:tools
 		ADDED from C:\Users\Sydney\AndroidStudioProjects\RecipeApp\app\src\main\AndroidManifest.xml:3:5-51
 	android:versionCode
 		INJECTED from C:\Users\Sydney\AndroidStudioProjects\RecipeApp\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\Sydney\AndroidStudioProjects\RecipeApp\app\src\main\AndroidManifest.xml:2:1-31:12
+		ADDED from C:\Users\Sydney\AndroidStudioProjects\RecipeApp\app\src\main\AndroidManifest.xml:2:1-38:12
 		INJECTED from C:\Users\Sydney\AndroidStudioProjects\RecipeApp\app\src\main\AndroidManifest.xml
 	xmlns:android
 		ADDED from C:\Users\Sydney\AndroidStudioProjects\RecipeApp\app\src\main\AndroidManifest.xml:2:11-69
 application
-ADDED from C:\Users\Sydney\AndroidStudioProjects\RecipeApp\app\src\main\AndroidManifest.xml:5:5-29:19
+ADDED from C:\Users\Sydney\AndroidStudioProjects\RecipeApp\app\src\main\AndroidManifest.xml:5:5-36:19
 MERGED from [com.google.android.material:material:1.8.0] C:\Users\Sydney\.gradle\caches\transforms-3\3d52fed6a37ef4efbd34cc2e0cfac305\transformed\material-1.8.0\AndroidManifest.xml:24:5-20
 MERGED from [com.google.android.material:material:1.8.0] C:\Users\Sydney\.gradle\caches\transforms-3\3d52fed6a37ef4efbd34cc2e0cfac305\transformed\material-1.8.0\AndroidManifest.xml:24:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] C:\Users\Sydney\.gradle\caches\transforms-3\83095ac82172a7d11ec931d243e0af4a\transformed\constraintlayout-2.1.4\AndroidManifest.xml:9:5-20
@@ -138,28 +138,34 @@ MERGED from [com.facebook.stetho:stetho:1.5.1] C:\Users\Sydney\.gradle\caches\tr
 		ADDED from C:\Users\Sydney\AndroidStudioProjects\RecipeApp\app\src\main\AndroidManifest.xml:8:9-65
 	android:name
 		ADDED from C:\Users\Sydney\AndroidStudioProjects\RecipeApp\app\src\main\AndroidManifest.xml:6:9-46
-activity#com.example.recipeapp.MainActivity
-ADDED from C:\Users\Sydney\AndroidStudioProjects\RecipeApp\app\src\main\AndroidManifest.xml:16:9-28:20
+activity#com.example.recipeapp.AddGroceryIngredient
+ADDED from C:\Users\Sydney\AndroidStudioProjects\RecipeApp\app\src\main\AndroidManifest.xml:16:9-22:20
 	android:exported
-		ADDED from C:\Users\Sydney\AndroidStudioProjects\RecipeApp\app\src\main\AndroidManifest.xml:18:13-36
+		ADDED from C:\Users\Sydney\AndroidStudioProjects\RecipeApp\app\src\main\AndroidManifest.xml:18:13-37
 	android:name
-		ADDED from C:\Users\Sydney\AndroidStudioProjects\RecipeApp\app\src\main\AndroidManifest.xml:17:13-41
-intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from C:\Users\Sydney\AndroidStudioProjects\RecipeApp\app\src\main\AndroidManifest.xml:19:13-23:29
-action#android.intent.action.MAIN
-ADDED from C:\Users\Sydney\AndroidStudioProjects\RecipeApp\app\src\main\AndroidManifest.xml:20:17-69
-	android:name
-		ADDED from C:\Users\Sydney\AndroidStudioProjects\RecipeApp\app\src\main\AndroidManifest.xml:20:25-66
-category#android.intent.category.LAUNCHER
-ADDED from C:\Users\Sydney\AndroidStudioProjects\RecipeApp\app\src\main\AndroidManifest.xml:22:17-77
-	android:name
-		ADDED from C:\Users\Sydney\AndroidStudioProjects\RecipeApp\app\src\main\AndroidManifest.xml:22:27-74
+		ADDED from C:\Users\Sydney\AndroidStudioProjects\RecipeApp\app\src\main\AndroidManifest.xml:17:13-49
 meta-data#android.app.lib_name
-ADDED from C:\Users\Sydney\AndroidStudioProjects\RecipeApp\app\src\main\AndroidManifest.xml:25:13-27:36
+ADDED from C:\Users\Sydney\AndroidStudioProjects\RecipeApp\app\src\main\AndroidManifest.xml:19:13-21:36
 	android:value
-		ADDED from C:\Users\Sydney\AndroidStudioProjects\RecipeApp\app\src\main\AndroidManifest.xml:27:17-33
+		ADDED from C:\Users\Sydney\AndroidStudioProjects\RecipeApp\app\src\main\AndroidManifest.xml:21:17-33
 	android:name
-		ADDED from C:\Users\Sydney\AndroidStudioProjects\RecipeApp\app\src\main\AndroidManifest.xml:26:17-52
+		ADDED from C:\Users\Sydney\AndroidStudioProjects\RecipeApp\app\src\main\AndroidManifest.xml:20:17-52
+activity#com.example.recipeapp.MainActivity
+ADDED from C:\Users\Sydney\AndroidStudioProjects\RecipeApp\app\src\main\AndroidManifest.xml:23:9-35:20
+	android:exported
+		ADDED from C:\Users\Sydney\AndroidStudioProjects\RecipeApp\app\src\main\AndroidManifest.xml:25:13-36
+	android:name
+		ADDED from C:\Users\Sydney\AndroidStudioProjects\RecipeApp\app\src\main\AndroidManifest.xml:24:13-41
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from C:\Users\Sydney\AndroidStudioProjects\RecipeApp\app\src\main\AndroidManifest.xml:26:13-30:29
+action#android.intent.action.MAIN
+ADDED from C:\Users\Sydney\AndroidStudioProjects\RecipeApp\app\src\main\AndroidManifest.xml:27:17-69
+	android:name
+		ADDED from C:\Users\Sydney\AndroidStudioProjects\RecipeApp\app\src\main\AndroidManifest.xml:27:25-66
+category#android.intent.category.LAUNCHER
+ADDED from C:\Users\Sydney\AndroidStudioProjects\RecipeApp\app\src\main\AndroidManifest.xml:29:17-77
+	android:name
+		ADDED from C:\Users\Sydney\AndroidStudioProjects\RecipeApp\app\src\main\AndroidManifest.xml:29:27-74
 uses-sdk
 INJECTED from C:\Users\Sydney\AndroidStudioProjects\RecipeApp\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from C:\Users\Sydney\AndroidStudioProjects\RecipeApp\app\src\main\AndroidManifest.xml

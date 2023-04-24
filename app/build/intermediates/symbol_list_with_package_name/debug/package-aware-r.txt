@@ -2754,6 +2754,7 @@ drawable design_ic_visibility_off
 drawable design_password_eye
 drawable design_snackbar_background
 drawable ic_arrow_back_black_24
+drawable ic_cart_checked
 drawable ic_clear_black_24
 drawable ic_clock_black_24dp
 drawable ic_delete
@@ -2950,6 +2951,7 @@ id bounce
 id bounceBoth
 id bounceEnd
 id bounceStart
+id btnAddIngredient
 id buttonPanel
 id cache_measures
 id callMeasure
@@ -3067,6 +3069,8 @@ id honorRequest
 id horizontal_only
 id iBtnDelete
 id iBtnDeleteAll
+id iBtnGroceryItemCheck
+id iBtnGroceryItemDelete
 id icon
 id icon_group
 id ifRoom
@@ -3085,6 +3089,7 @@ id item_touch_helper_previous_elevation
 id jumpToEnd
 id jumpToStart
 id label
+id labelGrocery
 id labeled
 id layout
 id left
@@ -3202,7 +3207,9 @@ id progress_circular
 id progress_horizontal
 id radio
 id ratio
+id recipeimage
 id recipeslist
+id recipetitle
 id rectangles
 id reverseSawtooth
 id right
@@ -3213,6 +3220,7 @@ id rounded
 id row_index_key
 id rtl
 id rvFridgeIngredients
+id rvGroceryIngredients
 id save_non_transition_alpha
 id save_overlay_view
 id sawtooth
@@ -3312,7 +3320,6 @@ id textSpacerNoButtons
 id textSpacerNoTitle
 id textStart
 id textTop
-id textView
 id textView2
 id text_input_end_icon
 id text_input_error_icon
@@ -3339,6 +3346,8 @@ id transition_position
 id transition_scene_layoutid_cache
 id transition_transform
 id triangle
+id tvIngredientGroceryItemName
+id tvIngredientGroceryItemQuantity
 id tvIngredientItemName
 id tvIngredientItemQuantity
 id unchecked
@@ -3470,6 +3479,7 @@ layout abc_search_dropdown_item_icons_2line
 layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
+layout activity_add_grocery_ingredient
 layout activity_main
 layout custom_dialog
 layout design_bottom_navigation_item
@@ -3491,6 +3501,7 @@ layout fragment_fridge
 layout fragment_grocery_list
 layout fragment_recipe
 layout fridge_item
+layout grocery_item
 layout m3_alert_dialog
 layout m3_alert_dialog_actions
 layout m3_alert_dialog_title

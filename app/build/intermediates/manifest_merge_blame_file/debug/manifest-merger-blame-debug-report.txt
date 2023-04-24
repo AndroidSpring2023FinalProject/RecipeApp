@@ -22,7 +22,7 @@
 15-->[androidx.core:core:1.9.0] C:\Users\Sydney\.gradle\caches\transforms-3\f130c831021dc68e91195b5855adf73e\transformed\core-1.9.0\AndroidManifest.xml:26:22-94
 16
 17    <application
-17-->C:\Users\Sydney\AndroidStudioProjects\RecipeApp\app\src\main\AndroidManifest.xml:5:5-29:19
+17-->C:\Users\Sydney\AndroidStudioProjects\RecipeApp\app\src\main\AndroidManifest.xml:5:5-36:19
 18        android:name="com.example.recipeapp.IngredientApplication"
 18-->C:\Users\Sydney\AndroidStudioProjects\RecipeApp\app\src\main\AndroidManifest.xml:6:9-46
 19        android:allowBackup="true"
@@ -43,77 +43,89 @@
 27-->C:\Users\Sydney\AndroidStudioProjects\RecipeApp\app\src\main\AndroidManifest.xml:12:9-54
 28        android:supportsRtl="true"
 28-->C:\Users\Sydney\AndroidStudioProjects\RecipeApp\app\src\main\AndroidManifest.xml:13:9-35
-29        android:testOnly="true"
-30        android:theme="@style/Theme.RecipeApp" >
-30-->C:\Users\Sydney\AndroidStudioProjects\RecipeApp\app\src\main\AndroidManifest.xml:14:9-47
-31        <activity
-31-->C:\Users\Sydney\AndroidStudioProjects\RecipeApp\app\src\main\AndroidManifest.xml:16:9-28:20
-32            android:name="com.example.recipeapp.MainActivity"
-32-->C:\Users\Sydney\AndroidStudioProjects\RecipeApp\app\src\main\AndroidManifest.xml:17:13-41
-33            android:exported="true" >
-33-->C:\Users\Sydney\AndroidStudioProjects\RecipeApp\app\src\main\AndroidManifest.xml:18:13-36
-34            <intent-filter>
-34-->C:\Users\Sydney\AndroidStudioProjects\RecipeApp\app\src\main\AndroidManifest.xml:19:13-23:29
-35                <action android:name="android.intent.action.MAIN" />
-35-->C:\Users\Sydney\AndroidStudioProjects\RecipeApp\app\src\main\AndroidManifest.xml:20:17-69
-35-->C:\Users\Sydney\AndroidStudioProjects\RecipeApp\app\src\main\AndroidManifest.xml:20:25-66
-36
-37                <category android:name="android.intent.category.LAUNCHER" />
-37-->C:\Users\Sydney\AndroidStudioProjects\RecipeApp\app\src\main\AndroidManifest.xml:22:17-77
-37-->C:\Users\Sydney\AndroidStudioProjects\RecipeApp\app\src\main\AndroidManifest.xml:22:27-74
-38            </intent-filter>
-39
-40            <meta-data
-40-->C:\Users\Sydney\AndroidStudioProjects\RecipeApp\app\src\main\AndroidManifest.xml:25:13-27:36
-41                android:name="android.app.lib_name"
-41-->C:\Users\Sydney\AndroidStudioProjects\RecipeApp\app\src\main\AndroidManifest.xml:26:17-52
-42                android:value="" />
-42-->C:\Users\Sydney\AndroidStudioProjects\RecipeApp\app\src\main\AndroidManifest.xml:27:17-33
-43        </activity>
-44
-45        <provider
-45-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Sydney\.gradle\caches\transforms-3\d92c5cc1a013e3905abd6de0233a0984\transformed\emoji2-1.2.0\AndroidManifest.xml:24:9-32:20
-46            android:name="androidx.startup.InitializationProvider"
-46-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Sydney\.gradle\caches\transforms-3\d92c5cc1a013e3905abd6de0233a0984\transformed\emoji2-1.2.0\AndroidManifest.xml:25:13-67
-47            android:authorities="com.example.recipeapp.androidx-startup"
-47-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Sydney\.gradle\caches\transforms-3\d92c5cc1a013e3905abd6de0233a0984\transformed\emoji2-1.2.0\AndroidManifest.xml:26:13-68
-48            android:exported="false" >
-48-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Sydney\.gradle\caches\transforms-3\d92c5cc1a013e3905abd6de0233a0984\transformed\emoji2-1.2.0\AndroidManifest.xml:27:13-37
-49            <meta-data
-49-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Sydney\.gradle\caches\transforms-3\d92c5cc1a013e3905abd6de0233a0984\transformed\emoji2-1.2.0\AndroidManifest.xml:29:13-31:52
-50                android:name="androidx.emoji2.text.EmojiCompatInitializer"
-50-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Sydney\.gradle\caches\transforms-3\d92c5cc1a013e3905abd6de0233a0984\transformed\emoji2-1.2.0\AndroidManifest.xml:30:17-75
-51                android:value="androidx.startup" />
-51-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Sydney\.gradle\caches\transforms-3\d92c5cc1a013e3905abd6de0233a0984\transformed\emoji2-1.2.0\AndroidManifest.xml:31:17-49
-52            <meta-data
-52-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\Sydney\.gradle\caches\transforms-3\2f5947853f03f04db3c6f7f7a18f9c97\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:31:13-33:52
-53                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
-53-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\Sydney\.gradle\caches\transforms-3\2f5947853f03f04db3c6f7f7a18f9c97\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:32:17-78
-54                android:value="androidx.startup" />
-54-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\Sydney\.gradle\caches\transforms-3\2f5947853f03f04db3c6f7f7a18f9c97\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:33:17-49
-55        </provider>
-56
-57        <uses-library
-57-->[androidx.window:window:1.0.0] C:\Users\Sydney\.gradle\caches\transforms-3\ea4ab31e94ec45a7bb2d68ead0f4eb5b\transformed\window-1.0.0\AndroidManifest.xml:25:9-27:40
-58            android:name="androidx.window.extensions"
-58-->[androidx.window:window:1.0.0] C:\Users\Sydney\.gradle\caches\transforms-3\ea4ab31e94ec45a7bb2d68ead0f4eb5b\transformed\window-1.0.0\AndroidManifest.xml:26:13-54
-59            android:required="false" />
-59-->[androidx.window:window:1.0.0] C:\Users\Sydney\.gradle\caches\transforms-3\ea4ab31e94ec45a7bb2d68ead0f4eb5b\transformed\window-1.0.0\AndroidManifest.xml:27:13-37
-60        <uses-library
-60-->[androidx.window:window:1.0.0] C:\Users\Sydney\.gradle\caches\transforms-3\ea4ab31e94ec45a7bb2d68ead0f4eb5b\transformed\window-1.0.0\AndroidManifest.xml:28:9-30:40
-61            android:name="androidx.window.sidecar"
-61-->[androidx.window:window:1.0.0] C:\Users\Sydney\.gradle\caches\transforms-3\ea4ab31e94ec45a7bb2d68ead0f4eb5b\transformed\window-1.0.0\AndroidManifest.xml:29:13-51
-62            android:required="false" />
-62-->[androidx.window:window:1.0.0] C:\Users\Sydney\.gradle\caches\transforms-3\ea4ab31e94ec45a7bb2d68ead0f4eb5b\transformed\window-1.0.0\AndroidManifest.xml:30:13-37
-63
-64        <service
-64-->[androidx.room:room-runtime:2.4.2] C:\Users\Sydney\.gradle\caches\transforms-3\18d2a4db5426b853736f99b743971e5f\transformed\room-runtime-2.4.2\AndroidManifest.xml:25:9-28:40
-65            android:name="androidx.room.MultiInstanceInvalidationService"
-65-->[androidx.room:room-runtime:2.4.2] C:\Users\Sydney\.gradle\caches\transforms-3\18d2a4db5426b853736f99b743971e5f\transformed\room-runtime-2.4.2\AndroidManifest.xml:26:13-74
-66            android:directBootAware="true"
-66-->[androidx.room:room-runtime:2.4.2] C:\Users\Sydney\.gradle\caches\transforms-3\18d2a4db5426b853736f99b743971e5f\transformed\room-runtime-2.4.2\AndroidManifest.xml:27:13-43
-67            android:exported="false" />
-67-->[androidx.room:room-runtime:2.4.2] C:\Users\Sydney\.gradle\caches\transforms-3\18d2a4db5426b853736f99b743971e5f\transformed\room-runtime-2.4.2\AndroidManifest.xml:28:13-37
-68    </application>
+29        android:theme="@style/Theme.RecipeApp" >
+29-->C:\Users\Sydney\AndroidStudioProjects\RecipeApp\app\src\main\AndroidManifest.xml:14:9-47
+30        <activity
+30-->C:\Users\Sydney\AndroidStudioProjects\RecipeApp\app\src\main\AndroidManifest.xml:16:9-22:20
+31            android:name="com.example.recipeapp.AddGroceryIngredient"
+31-->C:\Users\Sydney\AndroidStudioProjects\RecipeApp\app\src\main\AndroidManifest.xml:17:13-49
+32            android:exported="false" >
+32-->C:\Users\Sydney\AndroidStudioProjects\RecipeApp\app\src\main\AndroidManifest.xml:18:13-37
+33            <meta-data
+33-->C:\Users\Sydney\AndroidStudioProjects\RecipeApp\app\src\main\AndroidManifest.xml:19:13-21:36
+34                android:name="android.app.lib_name"
+34-->C:\Users\Sydney\AndroidStudioProjects\RecipeApp\app\src\main\AndroidManifest.xml:20:17-52
+35                android:value="" />
+35-->C:\Users\Sydney\AndroidStudioProjects\RecipeApp\app\src\main\AndroidManifest.xml:21:17-33
+36        </activity>
+37        <activity
+37-->C:\Users\Sydney\AndroidStudioProjects\RecipeApp\app\src\main\AndroidManifest.xml:23:9-35:20
+38            android:name="com.example.recipeapp.MainActivity"
+38-->C:\Users\Sydney\AndroidStudioProjects\RecipeApp\app\src\main\AndroidManifest.xml:24:13-41
+39            android:exported="true" >
+39-->C:\Users\Sydney\AndroidStudioProjects\RecipeApp\app\src\main\AndroidManifest.xml:25:13-36
+40            <intent-filter>
+40-->C:\Users\Sydney\AndroidStudioProjects\RecipeApp\app\src\main\AndroidManifest.xml:26:13-30:29
+41                <action android:name="android.intent.action.MAIN" />
+41-->C:\Users\Sydney\AndroidStudioProjects\RecipeApp\app\src\main\AndroidManifest.xml:27:17-69
+41-->C:\Users\Sydney\AndroidStudioProjects\RecipeApp\app\src\main\AndroidManifest.xml:27:25-66
+42
+43                <category android:name="android.intent.category.LAUNCHER" />
+43-->C:\Users\Sydney\AndroidStudioProjects\RecipeApp\app\src\main\AndroidManifest.xml:29:17-77
+43-->C:\Users\Sydney\AndroidStudioProjects\RecipeApp\app\src\main\AndroidManifest.xml:29:27-74
+44            </intent-filter>
+45
+46            <meta-data
+46-->C:\Users\Sydney\AndroidStudioProjects\RecipeApp\app\src\main\AndroidManifest.xml:19:13-21:36
+47                android:name="android.app.lib_name"
+47-->C:\Users\Sydney\AndroidStudioProjects\RecipeApp\app\src\main\AndroidManifest.xml:20:17-52
+48                android:value="" />
+48-->C:\Users\Sydney\AndroidStudioProjects\RecipeApp\app\src\main\AndroidManifest.xml:21:17-33
+49        </activity>
+50
+51        <provider
+51-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Sydney\.gradle\caches\transforms-3\d92c5cc1a013e3905abd6de0233a0984\transformed\emoji2-1.2.0\AndroidManifest.xml:24:9-32:20
+52            android:name="androidx.startup.InitializationProvider"
+52-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Sydney\.gradle\caches\transforms-3\d92c5cc1a013e3905abd6de0233a0984\transformed\emoji2-1.2.0\AndroidManifest.xml:25:13-67
+53            android:authorities="com.example.recipeapp.androidx-startup"
+53-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Sydney\.gradle\caches\transforms-3\d92c5cc1a013e3905abd6de0233a0984\transformed\emoji2-1.2.0\AndroidManifest.xml:26:13-68
+54            android:exported="false" >
+54-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Sydney\.gradle\caches\transforms-3\d92c5cc1a013e3905abd6de0233a0984\transformed\emoji2-1.2.0\AndroidManifest.xml:27:13-37
+55            <meta-data
+55-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Sydney\.gradle\caches\transforms-3\d92c5cc1a013e3905abd6de0233a0984\transformed\emoji2-1.2.0\AndroidManifest.xml:29:13-31:52
+56                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+56-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Sydney\.gradle\caches\transforms-3\d92c5cc1a013e3905abd6de0233a0984\transformed\emoji2-1.2.0\AndroidManifest.xml:30:17-75
+57                android:value="androidx.startup" />
+57-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Sydney\.gradle\caches\transforms-3\d92c5cc1a013e3905abd6de0233a0984\transformed\emoji2-1.2.0\AndroidManifest.xml:31:17-49
+58            <meta-data
+58-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\Sydney\.gradle\caches\transforms-3\2f5947853f03f04db3c6f7f7a18f9c97\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:31:13-33:52
+59                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+59-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\Sydney\.gradle\caches\transforms-3\2f5947853f03f04db3c6f7f7a18f9c97\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:32:17-78
+60                android:value="androidx.startup" />
+60-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\Sydney\.gradle\caches\transforms-3\2f5947853f03f04db3c6f7f7a18f9c97\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:33:17-49
+61        </provider>
+62
+63        <uses-library
+63-->[androidx.window:window:1.0.0] C:\Users\Sydney\.gradle\caches\transforms-3\ea4ab31e94ec45a7bb2d68ead0f4eb5b\transformed\window-1.0.0\AndroidManifest.xml:25:9-27:40
+64            android:name="androidx.window.extensions"
+64-->[androidx.window:window:1.0.0] C:\Users\Sydney\.gradle\caches\transforms-3\ea4ab31e94ec45a7bb2d68ead0f4eb5b\transformed\window-1.0.0\AndroidManifest.xml:26:13-54
+65            android:required="false" />
+65-->[androidx.window:window:1.0.0] C:\Users\Sydney\.gradle\caches\transforms-3\ea4ab31e94ec45a7bb2d68ead0f4eb5b\transformed\window-1.0.0\AndroidManifest.xml:27:13-37
+66        <uses-library
+66-->[androidx.window:window:1.0.0] C:\Users\Sydney\.gradle\caches\transforms-3\ea4ab31e94ec45a7bb2d68ead0f4eb5b\transformed\window-1.0.0\AndroidManifest.xml:28:9-30:40
+67            android:name="androidx.window.sidecar"
+67-->[androidx.window:window:1.0.0] C:\Users\Sydney\.gradle\caches\transforms-3\ea4ab31e94ec45a7bb2d68ead0f4eb5b\transformed\window-1.0.0\AndroidManifest.xml:29:13-51
+68            android:required="false" />
+68-->[androidx.window:window:1.0.0] C:\Users\Sydney\.gradle\caches\transforms-3\ea4ab31e94ec45a7bb2d68ead0f4eb5b\transformed\window-1.0.0\AndroidManifest.xml:30:13-37
 69
-70</manifest>
+70        <service
+70-->[androidx.room:room-runtime:2.4.2] C:\Users\Sydney\.gradle\caches\transforms-3\18d2a4db5426b853736f99b743971e5f\transformed\room-runtime-2.4.2\AndroidManifest.xml:25:9-28:40
+71            android:name="androidx.room.MultiInstanceInvalidationService"
+71-->[androidx.room:room-runtime:2.4.2] C:\Users\Sydney\.gradle\caches\transforms-3\18d2a4db5426b853736f99b743971e5f\transformed\room-runtime-2.4.2\AndroidManifest.xml:26:13-74
+72            android:directBootAware="true"
+72-->[androidx.room:room-runtime:2.4.2] C:\Users\Sydney\.gradle\caches\transforms-3\18d2a4db5426b853736f99b743971e5f\transformed\room-runtime-2.4.2\AndroidManifest.xml:27:13-43
+73            android:exported="false" />
+73-->[androidx.room:room-runtime:2.4.2] C:\Users\Sydney\.gradle\caches\transforms-3\18d2a4db5426b853736f99b743971e5f\transformed\room-runtime-2.4.2\AndroidManifest.xml:28:13-37
+74    </application>
+75
+76</manifest>
