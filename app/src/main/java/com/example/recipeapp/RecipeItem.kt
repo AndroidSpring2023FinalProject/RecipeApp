@@ -28,7 +28,7 @@ data class RecipeItem(
     val timetocook: String,
 
     ) : java.io.Serializable{
-        val imagerec= imagepath
+        val imagerec=imagepath
     }
 
 

@@ -2993,6 +2993,7 @@ int id content 0x7f090086
 int id contentPanel 0x7f090087
 int id contiguous 0x7f090088
 int id continuousVelocity 0x7f090089
+int id cooktime 0x7f09020f
 int id coordinator 0x7f09008a
 int id cos 0x7f09008b
 int id counterclockwise 0x7f09008c
@@ -3092,6 +3093,7 @@ int id immediateStop 0x7f0900e9
 int id included 0x7f0900ea
 int id indeterminate 0x7f0900eb
 int id info 0x7f0900ec
+int id ingredients 0x7f090210
 int id invisible 0x7f0900ed
 int id inward 0x7f0900ee
 int id italic 0x7f0900ef
@@ -3329,7 +3331,6 @@ int id textSpacerNoButtons 0x7f0901d6
 int id textSpacerNoTitle 0x7f0901d7
 int id textStart 0x7f0901d8
 int id textTop 0x7f0901d9
-int id textView2 0x7f0901da
 int id text_input_end_icon 0x7f0901db
 int id text_input_error_icon 0x7f0901dc
 int id text_input_start_icon 0x7f0901dd

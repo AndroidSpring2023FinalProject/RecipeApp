@@ -32,6 +32,7 @@ class RecipeAdapter(private val context: Context, private val recipeslist: List<
             View.OnClickListener {
         private val imageview = itemView.findViewById<ImageView>(R.id.recipeimage)
         private val titleview = itemView.findViewById<TextView>(R.id.recipetitle)
+        private val cooktime = itemView.findViewById<TextView>(R.id.cooktime)
 
         init {
             itemView.setOnClickListener(this)
@@ -39,6 +40,7 @@ class RecipeAdapter(private val context: Context, private val recipeslist: List<
 
         fun bind(recipeItem: RecipeItem) {
             titleview.text = recipeItem.recipetitle
+            cooktime.text="Cook Time: "+recipeItem.timetocook
 
             Glide.with(context)
                 .load(recipeItem.imagerec)

@@ -31,12 +31,14 @@ id autoAddIngredient
 id bottom_navigation
 id btnAddIngredient
 id btnAddSubmit
+id cooktime
 id etAddIngredientQuantity
 id frame_layout
 id iBtnDelete
 id iBtnDeleteAll
 id iBtnGroceryItemCheck
 id iBtnGroceryItemDelete
+id ingredients
 id label
 id labelGrocery
 id recipeimage
@@ -44,7 +46,6 @@ id recipeslist
 id recipetitle
 id rvFridgeIngredients
 id rvGroceryIngredients
-id textView2
 id tvIngredientGroceryItemName
 id tvIngredientGroceryItemQuantity
 id tvIngredientItemName
