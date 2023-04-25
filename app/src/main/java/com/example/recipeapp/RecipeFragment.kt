@@ -92,8 +92,13 @@ class RecipeFragment : Fragment() {
                         BaseResponse.serializer(),
                         json?.jsonObject.toString()
                     )
+
                     parsedJson.docs?.let{ list->
                         recipeslist.addAll(list)
+                        Log.d("JSON TEST", list.toString())
+//                        Log.d("JSON TEST3" ,list[0].ingredients.toString())
+
+                        //Log.d("JSON TEST2", resultList[0].)
                         reciperecyclerview.adapter?.notifyDataSetChanged()
                     }
                 } catch(e: JSONException){

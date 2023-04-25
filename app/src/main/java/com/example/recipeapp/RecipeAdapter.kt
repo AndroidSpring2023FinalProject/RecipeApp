@@ -42,7 +42,11 @@ class RecipeAdapter(private val context: Context, private val recipeslist: List<
         fun bind(recipeItem: RecipeItem) {
             titleview.text = recipeItem.recipetitle
             cooktime.text="Cook Time: "+recipeItem.timetocook
-            //ingredients.text= recipeItem.inneringred.toString()
+            var result :String = ""
+            for(ingredient in recipeItem.ingredients!!){
+                result+= ingredient.ingredientName+ ": "+ ingredient.ingredientQuantity + "\n"
+            }
+            ingredients.text= result
 
 
             Glide.with(context)
