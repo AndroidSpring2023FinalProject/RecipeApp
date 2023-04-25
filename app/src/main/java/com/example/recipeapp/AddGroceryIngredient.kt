@@ -429,11 +429,12 @@ class AddGroceryIngredient : AppCompatActivity() {
 
         val submitButton = findViewById<Button>(R.id.btnAddSubmit)
         submitButton.setOnClickListener{
-            if(autoIngredientsList.contains(ingredient.text.toString())){
+            if((autoIngredientsList.contains(ingredient.text.toString())) && !(ingredientQuantity.text.toString().isEmpty())){
                 val ingredientSplitArray = ingredient.text.toString().split(".")
                 val addIngredient = IngredientGrocery(ingredientSplitArray[1].toLong(), ingredientSplitArray[0], ingredientQuantity.text.toString())
                 GroceryIngredients.addIngredient(addIngredient)
                 var currIndex = 0;
+
                 GroceryIngredients.ingredients.forEachIndexed{index, eachIngredient ->
                     Log.d("Testing", eachIngredient.name)
                     if(ingredientSplitArray[0] == eachIngredient.name){
@@ -443,10 +444,13 @@ class AddGroceryIngredient : AppCompatActivity() {
                 lifecycleScope.launch(Dispatchers.IO){
                     (application as IngredientApplication).db.groceryDao().insert(GroceryIngredients.ingredients.get(currIndex))
                 }
-                setResult(1)
-                finish()
+                ingredient.setText("")
+                ingredientQuantity.setText("")
+                val success = Toast.makeText(this, "Ingredient added!", Toast.LENGTH_SHORT).show()
+//                setResult(1)
+//                finish()
             }else{
-                val notFound = Toast.makeText(this, "Ingredient not found", Toast.LENGTH_SHORT).show()
+                val notFound = Toast.makeText(this, "Ingredient not found.", Toast.LENGTH_SHORT).show()
                 ingredient.setText("")
                 ingredientQuantity.setText("")
 

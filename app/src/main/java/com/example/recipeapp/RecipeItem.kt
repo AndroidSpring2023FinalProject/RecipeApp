@@ -27,8 +27,26 @@ data class RecipeItem(
     @SerialName("readyInMinutes")
     val timetocook: String,
 
+    @SerialName("extendedIngredients")
+    val inneringred: ArrayList<IgList>?
+
     ) : java.io.Serializable{
         val imagerec=imagepath
     }
 
+
+@Keep
+@Serializable
+data class IgList(
+    @SerialName("extendedIngredients")
+    val ingredients: List<Unit>?
+) : java.io.Serializable
+
+
+@Keep
+@Serializable
+data class Unit(
+    @SerialName("name")
+    val ingname: String
+): java.io.Serializable
 
