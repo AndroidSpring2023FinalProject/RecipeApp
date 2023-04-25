@@ -1,8 +1,14 @@
 R_DEF: Internal format may change without notice
 local
 array ingredients
+color beige
 color black
+color blush
+color brown
 color gray
+color matteb
+color orange
+color pink
 color purple_200
 color purple_500
 color purple_700

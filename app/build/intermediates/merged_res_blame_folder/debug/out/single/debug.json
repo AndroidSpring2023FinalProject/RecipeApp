@@ -28,6 +28,10 @@
         "source": "C:\\Users\\Sydney\\.gradle\\daemon\\7.4\\com.example.recipeapp-main-52:\\layout\\fragment_grocery_list.xml"
     },
     {
+        "merged": "com.example.recipeapp-merged_res-50:/layout_fragment_fridge.xml.flat",
+        "source": "com.example.recipeapp-main-52:/layout/fragment_fridge.xml"
+    },
+    {
         "merged": "C:\\Users\\Sydney\\.gradle\\daemon\\7.4\\com.example.recipeapp-merged_res-50:\\mipmap-mdpi_ic_launcher_round.webp.flat",
         "source": "C:\\Users\\Sydney\\.gradle\\daemon\\7.4\\com.example.recipeapp-main-52:\\mipmap-mdpi\\ic_launcher_round.webp"
     },
@@ -54,10 +58,6 @@
     {
         "merged": "C:\\Users\\Sydney\\.gradle\\daemon\\7.4\\com.example.recipeapp-merged_res-50:\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
         "source": "C:\\Users\\Sydney\\.gradle\\daemon\\7.4\\com.example.recipeapp-main-52:\\mipmap-anydpi-v26\\ic_launcher_round.xml"
-    },
-    {
-        "merged": "com.example.recipeapp-merged_res-50:/layout_activity_main.xml.flat",
-        "source": "com.example.recipeapp-main-52:/layout/activity_main.xml"
     },
     {
         "merged": "C:\\Users\\Sydney\\.gradle\\daemon\\7.4\\com.example.recipeapp-merged_res-50:\\layout_fragment_fridge.xml.flat",

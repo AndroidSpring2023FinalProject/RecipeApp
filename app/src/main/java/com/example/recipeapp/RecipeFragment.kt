@@ -19,6 +19,7 @@ import kotlinx.serialization.json.Json
 import okhttp3.Headers
 import org.json.JSONException
 import androidx.appcompat.app.AppCompatActivity
+import androidx.recyclerview.widget.DividerItemDecoration
 import androidx.recyclerview.widget.LinearLayoutManager
 
 
@@ -39,8 +40,11 @@ class RecipeFragment : Fragment() {
 
     private val recipeslist= mutableListOf<RecipeItem>()
 
+
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
