@@ -10,11 +10,11 @@ public abstract interface FridgeDao {
     @androidx.room.Query(value = "SELECT * FROM ingredients_table")
     public abstract kotlinx.coroutines.flow.Flow<java.util.List<com.example.recipeapp.Ingredient>> getAll();
     
-    @androidx.room.Insert(onConflict = androidx.room.OnConflictStrategy.REPLACE)
+    @androidx.room.Insert(onConflict = 1)
     public abstract void insertAll(@org.jetbrains.annotations.NotNull()
     java.util.List<com.example.recipeapp.Ingredient> ingredients);
     
-    @androidx.room.Insert(onConflict = androidx.room.OnConflictStrategy.REPLACE)
+    @androidx.room.Insert(onConflict = 1)
     public abstract void insert(@org.jetbrains.annotations.NotNull()
     com.example.recipeapp.Ingredient ingredient);
     

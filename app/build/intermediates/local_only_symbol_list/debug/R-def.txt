@@ -1,6 +1,8 @@
 R_DEF: Internal format may change without notice
 local
+array ingredients
 color black
+color gray
 color purple_200
 color purple_500
 color purple_700
@@ -18,14 +20,17 @@ drawable ic_recipes
 id action_fridge
 id action_grocery_list
 id action_recipes
+id addItemlabel
+id autoAddIngredient
 id bottom_navigation
 id btnAddIngredient
+id btnAddSubmit
+id etAddIngredientQuantity
 id frame_layout
 id iBtnDelete
 id iBtnDeleteAll
 id iBtnGroceryItemCheck
 id iBtnGroceryItemDelete
-id imageView2
 id label
 id labelGrocery
 id recipeimage
@@ -33,7 +38,6 @@ id recipeslist
 id recipetitle
 id rvFridgeIngredients
 id rvGroceryIngredients
-id testButton
 id textView2
 id tvIngredientGroceryItemName
 id tvIngredientGroceryItemQuantity

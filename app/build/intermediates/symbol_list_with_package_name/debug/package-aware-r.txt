@@ -74,6 +74,7 @@ animator mtrl_fab_hide_motion_spec
 animator mtrl_fab_show_motion_spec
 animator mtrl_fab_transformation_sheet_collapse_spec
 animator mtrl_fab_transformation_sheet_expand_spec
+array ingredients
 attr SharedValue
 attr SharedValueId
 attr action
@@ -1400,6 +1401,7 @@ color error_color_material_dark
 color error_color_material_light
 color foreground_material_dark
 color foreground_material_light
+color gray
 color highlighted_text_material_dark
 color highlighted_text_material_light
 color m3_appbar_overlay_color
@@ -2922,6 +2924,7 @@ id action_text
 id actions
 id activity_chooser_view_content
 id add
+id addItemlabel
 id alertTitle
 id aligned
 id all
@@ -2936,6 +2939,7 @@ id arc
 id asConfigured
 id async
 id auto
+id autoAddIngredient
 id autoComplete
 id autoCompleteToEnd
 id autoCompleteToStart
@@ -2952,6 +2956,7 @@ id bounceBoth
 id bounceEnd
 id bounceStart
 id btnAddIngredient
+id btnAddSubmit
 id buttonPanel
 id cache_measures
 id callMeasure
@@ -3031,6 +3036,7 @@ id end
 id endToStart
 id enterAlways
 id enterAlwaysCollapsed
+id etAddIngredientQuantity
 id exitUntilCollapsed
 id expand_activities_button
 id expanded_menu
@@ -3077,7 +3083,6 @@ id ifRoom
 id ignore
 id ignoreRequest
 id image
-id imageView2
 id immediateStop
 id included
 id indeterminate
@@ -3312,7 +3317,6 @@ id tag_transition_group
 id tag_unhandled_key_event_manager
 id tag_unhandled_key_listeners
 id tag_window_insets_animation_callback
-id testButton
 id text
 id text2
 id textEnd
